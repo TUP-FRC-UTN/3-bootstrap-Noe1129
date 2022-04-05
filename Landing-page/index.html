@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <!--CSS-->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>Mi primer sitio web</title>
+  </head>
+  <body>
+    <!--Barra de navegacion-->
+    <header id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#navbar">Inicio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#fotos"
+                  >Fotos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#acerca-de">Acerca de</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Consultas</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-dark" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Fin de Barra de navegación-->
+    <!--Inicio-->
+    <section id="inicio">
+      <div class="cover">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12">
+              <h1 class="display-3 text-center">
+                Los campos de <span>Lavanda</span>
+              </h1>
+              <p class="lead">
+                <strong>
+                  En La Cumbre, una hermosa plantación de lavandas es un punto
+                  infaltable a la hora de conocer la región. <strong> Domaine de
+                  Puberclair</strong> es un complejo agro industrial perfumista que forma
+                  parte de un emprendimiento familiar. En sus paisajes, las
+                  flores violáceas y lilas llaman la atención como si se tratara
+                  de unos de los campos de La Provenza francesa.</strong
+                >
+              </p>
+              <div class="row">
+                <div class="col-md-4">
+              <form action="" class="form-inline justify-content-center">
+                <div class="form-group">
+                  <label for="nombre">Nombre</label>
+                  <input
+                    type="text"
+                    name="nombre"
+                    class="form-control form-control-lg"
+                    id="nombre"
+                    autofocus
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control form-control-lg"
+                    id="email"
+                    autocomplete="off"
+                  />
+                </div>
+                <br />
+                <div class="form-group">
+                  <button type="submit" class="btn btn-secondary btn-lg">
+                    Suscribirse
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fin de inicio -->
+    <!-- fotos -->
+    <section id="fotos">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/images/campo-lavanda-1.jpg"
+              class="d-block w-100"
+              alt="Campos de lavanda 1"
+            />
+            <div class="carousel-caption">
+              <p class="h3">Aromas serranos</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/images/campo-lavanda-2.jpg"
+              class="d-block w-100"
+              alt="Campos de lavanda 2"
+            />
+            <div class="carousel-caption">
+              <p class="h3">Lavanda de montaña</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/images/campo-lavanda-3.jpg"
+              class="d-block w-100"
+              alt="Campos de lavanda 3"
+            />
+            <div class="carousel-caption">
+              <p class="h3">El «Oro Azul»</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+    <!--Fin fotos-->
+    <!--acerca de-->
+    <section id="acerca-de" class="container-fluid">
+      <h3 class="display-6">Acerca de los campos de <span>Lavanda</span></h3>
+      <p class="lead">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, repellat.
+      </p>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="/images/Card1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title text-center">Cultivo</h5>
+              <p class="card-text">
+                La lavanda es una planta originaria de países mediterráneos, que exige para su cultivo climas cálidos y moderadamente secos, con inviernos suaves y veranos soleados. Las condiciones climáticas y las características del suelo de La Cumbre resultan ideales para el cultivo de esta planta, al igual que la reconocida región francesa de Provenza. 
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/images/Card2.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title text-center">Aceite esencial</h5>
+              <p class="card-text">Conocido por sus propiedades calmantes, se ha utilizado durante siglos de diversas maneras para ayudar a calmar y equilibrar. Con un aroma rico y calmante, el Aceite Esencial de Lavanda se utiliza a menudo para ayudar a relajar los sentidos antes de acostarse</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/images/Card3.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title text-center">Flores</h5>
+              <p class="card-text">
+                La floración de la lavanda varía cada año en función de las variedades de lavanda, y también debido a razones climáticas, de altitud y latitud. En las zonas altas hace más frío y es más tardía. En general, la floración de la lavanda en la Provenza se extiende de mediados de junio a mediados de agosto.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Fin Acerca de-->
+    <!--Footer-->
+    <section id="footer" class="container-fluid">
+      <div class="row">
+
+        <div class="col-md-4 offset-md-1 align-self-center">
+          <p class="h4 text-white">Acerca del sitio web</p>
+          <p class="lead text-white">
+            Desde hace ya mas de 25 años que abrimos nuestras puertas en La Cumbre ofreciendo los mejores productos de perfumería y cosmética.
+          </p>        
+        </div>
+        <div class="col-md-4 offset-md-3">
+          <p class="h4 text-white">Hacenos tu consulta</p>
+          <form action="" class="form-inline justify-content-center" >
+            <div class="form-group" >
+              <label class="lead text-white" for="nombre">Nombre</label>
+              <input type="text" name="nombre" class="form-control form-control-sm" id="nombre" autocomplete="off"/>
+            </div>
+            <div class="form-group" >
+              <label class="lead text-white" for="email">Email</label>
+              <input type="email" name="email" class="form-control form-control-sm" id="email" autocomplete="off"/>
+            </div>
+            <div class="form-group" >
+              <label class="lead text-white" for="consulta">Consulta</label>
+              <textarea class="form-control" style="resize: none;" name="consulta" id="consulta" cols="5" rows="5"></textarea>
+
+            </div>
+            <div class="form-group"  id="enviar">
+              <button  type="submit" class="btn btn-secondary btn-md">
+                Enviar
+              </button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+      </div>
+
+
+
+
+      <div class="row bg-dark small">
+        <div class="col-md-3 col-sm-12 text-white">
+          <p class="text-center">Creado en programación III</p>
+        </div>
+        <div class="col-md-3 col-sm-12 text-white">
+          <p>CORDOBA❤️VOS</p>
+          <p>CÓRDOBA <em>ENTRE TODOS</em></p>
+        </div>
+        <div class="col-md-3 col-sm-12 text-white">
+          <p>ARGENTINA</p>
+          <p>REGIÓN CENTRO</p>
+        </div>
+        <div class="col-md-3 col-sm-12 text-white align-self-center">
+          <p><small> © Córdoba Turismo 2022</small></p>
+          
+        </div>
+      </div>          
+    </section> 
+<!-- Fin footer -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

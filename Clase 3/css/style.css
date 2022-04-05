@@ -1,0 +1,11 @@
+#Inicio{
+    background: url(https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/tnc_52987642_Full.jpg?crop=0,233,4000,2200&wid=4000&hei=2200&scl=1.0)  center no-repeat;
+    background-size: cover;
+    height: 1080px;
+    display: flex;
+
+    
+}
+#cover-texto{
+    width: 100%;
+}

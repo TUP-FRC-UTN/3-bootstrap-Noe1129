@@ -1,0 +1,48 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  height: inherit;
+}
+#inicio {
+  background: url(/images/Cultivo-de-lavanda.jpg) center no-repeat;
+  background-size: cover;
+  height: 91%;
+  width: 100%;
+  display: flex;
+  text-align: justify;
+}
+#navbar :hover{
+  color: rgb(116, 12, 202);
+}
+label {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+button {
+  margin-bottom: 0.5em;
+}
+span {
+  color: orchid;
+  text-shadow: 1px 1px 2px black;
+}
+
+#acerca-de {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+#acerca-de img{
+  transition-duration: 0.3s;
+}
+#acerca-de img:hover {
+  transform: scale(1.2);
+}
+#footer {
+  background: url(/images/footer.jpg) center no-repeat;
+}
+#enviar{
+  margin-top: 10px;
+}
+
